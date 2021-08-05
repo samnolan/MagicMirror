@@ -38,7 +38,7 @@ let config = {
 	// true, force serveronly mode, because you want to.. no UI on this device
 
 	modules: [
-		    {
+		{
         module: 'MMM-pages',
         config: {
                 modules:
@@ -51,7 +51,13 @@ let config = {
                 },
         }
     },
-    
+    {
+        module: 'MMM-page-indicator',
+        position: 'bottom_bar',
+        config: {
+            pages: 3,
+        }
+    },
     
     {
 			module: "alert",
