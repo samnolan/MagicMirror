@@ -38,6 +38,22 @@ let config = {
 	// true, force serveronly mode, because you want to.. no UI on this device
 
 	modules: [
+               {
+                  module: 'MMM-Buttons',
+                  config: {
+                      buttons: [
+                          {
+                              pin: 16,
+                              name: "pageIncrement",
+                              shortPress: {
+                                  notification: "PAGE_INCREMENT",
+                                  payload: 1
+                              },
+                              longPress: undefined
+                          }]
+                   }
+               },
+         
 
                 {
                         module: 'MMM-pages',
