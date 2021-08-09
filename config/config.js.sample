@@ -47,7 +47,7 @@ let config = {
         module: 'MMM-pages',
         config: {
                 modules:
-                    [[ "weatherforecast", "newsfeed"],
+                    [[ "weather", "newsfeed"],
                      [ "calendar", "compliments" ]],
                 fixed: ["clock", "currentweather", "MMM-page-indicator"],
                 hiddenPages: {
