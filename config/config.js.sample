@@ -38,7 +38,12 @@ let config = {
 	// true, force serveronly mode, because you want to.. no UI on this device
 
 	modules: [
-		{
+	  {
+		    module: 'MMM-Button',
+	      config: {
+            notificationMessage: 'PAGE_INCREMENT',
+  	},		
+    {
         module: 'MMM-pages',
         config: {
                 modules:
