@@ -38,34 +38,27 @@ let config = {
 	// true, force serveronly mode, because you want to.. no UI on this device
 
 	modules: [
-	  {
-		    module: 'MMM-Button',
-	      config: {
-            notificationMessage: 'PAGE_INCREMENT',
-            buttonPIN: 16,
-        }
-  	},		
-    {
-        module: 'MMM-pages',
-        config: {
-                modules:
-                    [[ "weather", "newsfeed"],
-                     [ "calendar", "compliments" ]],
-                fixed: ["clock", "currentweather", "MMM-page-indicator"],
-                hiddenPages: {
-                    "screenSaver": [ "clock", "MMM-SomeBackgroundImageModule" ],
-                    "admin": [ "MMM-ShowMeSystemStatsModule", "MMM-AnOnScreenMenuModule" ],
+
+                {
+                        module: 'MMM-pages',
+                        config: {
+                                modules:
+                                        [[ "weather", "newsfeed"],
+                                        [ "calendar", "compliments" ]],
+                                fixed: ["clock", "currentweather", "MMM-page-indicator"],
+                                hiddenPages: {
+                                        "screenSaver": [ "clock", "MMM-SomeBackgroundImageModule" ],
+                                        "admin": [ "MMM-ShowMeSystemStatsModule", "MMM-AnOnScreenMenuModule" ],
+                                },
+                        }
                 },
-        }
-    },
-    {
-        module: 'MMM-page-indicator',
-        position: 'bottom_bar',
-        config: {
-            pages: 3,
-        }
-    },
-    
+                {
+                        module: 'MMM-page-indicator',
+                        position: 'bottom_bar',
+                        config: {
+                                pages: 3,
+                        }
+                },
     {
 			module: "alert",
 		},
