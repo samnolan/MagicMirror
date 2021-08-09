@@ -42,6 +42,8 @@ let config = {
 		    module: 'MMM-Button',
 	      config: {
             notificationMessage: 'PAGE_INCREMENT',
+            buttonPIN: 16,
+        }
   	},		
     {
         module: 'MMM-pages',
